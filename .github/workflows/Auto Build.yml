@@ -15,25 +15,10 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        include:
-          - userName: muxd93
-            repoName: TVBoxOS_XD
-            branchName: main
-          - userName: muxd93
-            repoName: TVBox_takagen99
-            branchName: main
-          - userName: q215613905
-            repoName: TVBoxOS
-            branchName: main
-          - userName: takagen99
-            repoName: Box
-            branchName: main
+        include:        
           - userName: XiaoRanLiu3119
             repoName: TVBoxOS-Mobile
-            branchName: main
-          - userName: gedoor
-            repoName: legado
-            branchName: main
+            branchName: main      
     steps:
       - name: Checkout
         uses: actions/checkout@v4
